@@ -8,11 +8,11 @@ Latest update: 4/19/23
 
 ## Beta
 
-I'm currently doing a beta test of this idea with some useful but simple prompts.
+I'm currently doing a beta test of this idea with some simple but useful prompts.
 
 I'll improve it as feedback comes in.
 
-Expect both more prompts and more complex prompts as I get this system ironed out.
+Expect much more powerful prompts as I get this system ironed out.
 
 ## Usage
 
@@ -22,9 +22,9 @@ Or, you can just copy and paste the prompts you want into ChatGPT.
 
 ## Upcoming
 
-I will be back soon with a system for selecting the prompts you want to use so that you don't have to import them all at once.
+I'll be back soon with a system for selecting the prompts you want to use so that you don't have to import them all at once.
 
-I'll also be building a system for others to create & share their own prompts.
+I'm also building a system for everyone to create & share their own prompts.
 
 ## Contact
 
