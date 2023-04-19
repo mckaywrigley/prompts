@@ -1,0 +1,333 @@
+{
+  "version": 4,
+  "history": [
+    {
+      "id": "42008604-07b3-47cc-8967-26b0f254e06b",
+      "name": "New Conversation",
+      "messages": [],
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "prompt": "You are ChatGPT, a large language model trained by OpenAI. Follow the user's instructions carefully. Respond using markdown.",
+      "temperature": 1,
+      "folderId": null
+    }
+  ],
+  "folders": [
+    {
+      "id": "4bc14a7f-9b63-426d-8685-a07370a85d9e",
+      "name": "Code: Bugs",
+      "type": "prompt"
+    },
+    {
+      "id": "fa94d830-335e-45b0-8b4c-1ea55001006f",
+      "name": "Code: Improve",
+      "type": "prompt"
+    },
+    {
+      "id": "93853408-c4ef-4b70-805b-649717a25ed8",
+      "name": "Code: Explain",
+      "type": "prompt"
+    },
+    {
+      "id": "3a039cd5-7a48-40f5-b629-ed4c756dd0a9",
+      "name": "Code: Grade",
+      "type": "prompt"
+    },
+    {
+      "id": "33c02fd0-0f57-4d4a-ba84-3cab51d04c04",
+      "name": "Code: General",
+      "type": "prompt"
+    },
+    {
+      "id": "c764be86-93ee-4874-b9c2-0d80bee63b16",
+      "name": "Code: Tech Spec",
+      "type": "prompt"
+    },
+    {
+      "id": "99539056-2b7e-4338-8226-df1699c230cd",
+      "name": "Code: Review",
+      "type": "prompt"
+    },
+    {
+      "id": "8d50c17a-9b4a-4536-843a-48097e1d98bc",
+      "name": "Code: Translate",
+      "type": "prompt"
+    },
+    {
+      "id": "6eea5390-b971-4fd4-9a17-3bb60f657b9d",
+      "name": "Code: Generate",
+      "type": "prompt"
+    },
+    {
+      "id": "1d168eb9-be6c-4206-80bf-a4f74b648d5e",
+      "name": "Code: Changes",
+      "type": "prompt"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "714c3dea-a497-4feb-afb2-5b096d327715",
+      "name": "Bug Fixer (system)",
+      "description": "A system prompt for code bug fixes.",
+      "content": "You are a world-class software engineer. You are particularly good at fixing bugs in code.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "4bc14a7f-9b63-426d-8685-a07370a85d9e"
+    },
+    {
+      "id": "ea3fa9b1-e041-47db-b1eb-8d4d00d97447",
+      "name": "Software Engineer (system)",
+      "description": "A system prompt for a general-purpose software engineer.",
+      "content": "You are a world-class software engineer.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "33c02fd0-0f57-4d4a-ba84-3cab51d04c04"
+    },
+    {
+      "id": "e3a8c028-c5e9-4b0a-ae29-242eba22fbf6",
+      "name": "Fix Bugs",
+      "description": "Identifies and explains bugs in the given code.",
+      "content": "Go line-by-line and do a detailed inspection of my code looking for bugs. If you see a bug, identify it. Explain what the bug is and provide a fix.\n\nRespond as a well-formatted markdown file that is organized into sections. Make sure to use code blocks.\n\nInspect this code:\n{{code}}",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "4bc14a7f-9b63-426d-8685-a07370a85d9e"
+    },
+    {
+      "id": "fcdcb73a-164e-4bc6-8446-86bc8e9445e0",
+      "name": "Code Explainer (system)",
+      "description": "A system prompt for a code explainer.",
+      "content": "You are a world-class software engineer. You are particularly good at explaining code in a thorough but simple way.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "93853408-c4ef-4b70-805b-649717a25ed8"
+    },
+    {
+      "id": "e29e9c7e-c9de-49a3-857c-41b1e0eee477",
+      "name": "Explain My Code",
+      "description": "Explains the given code.",
+      "content": "Explain the given code. Be thorough, but explain it in a simple way that anyone could understand.\n\nRespond as a well-formatted markdown file that is organized into sections. Make sure to use code blocks.\n\nExplain this code:\n{{code}}",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "93853408-c4ef-4b70-805b-649717a25ed8"
+    },
+    {
+      "id": "f666335e-89cb-4f8b-969d-0cda0a706e89",
+      "name": "Grade Code (letter)",
+      "description": "Grades the given code a letter grade.",
+      "content": "Grade my code. Give it a letter grade.\n\nAnalyze it as you see best, and take into account multiple factors. The grade needs to be comprehensive.\n\nGive the letter grade 1st, then explain your reasoning.\n\nRespond as a report card in well-formatted markdown.\n\nGrade this code:\n{{code}}",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "3a039cd5-7a48-40f5-b629-ed4c756dd0a9"
+    },
+    {
+      "id": "89d5e46e-b8f2-4a93-a378-32f2ee8ae2b7",
+      "name": "Improve Code",
+      "description": "Improves the given code.",
+      "content": "Improve the given code. Don't change any core functionality.\n\nThe focus is to actually make the code better - not to explain it - so avoid things like just adding comments to it.\n\nRespond as a well-formatted markdown file that is organized into sections. Make sure to use code blocks.\n\nImprove this code:\n{{code}}",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "fa94d830-335e-45b0-8b4c-1ea55001006f"
+    },
+    {
+      "id": "60e53c40-799f-4f64-97e6-bbcae298ffe9",
+      "name": "Code Improver (system)",
+      "description": "A system prompt for a code improver.",
+      "content": "You are a world-class software engineer. You are particularly good at improving code.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "fa94d830-335e-45b0-8b4c-1ea55001006f"
+    },
+    {
+      "id": "c3c86a37-3ecb-401e-81ed-a2503b3d5d6d",
+      "name": "Code Planner (system)",
+      "description": "A system prompt for an assistant that drafts up a software spec.",
+      "content": "You are a world-class software engineer. You are particularly good at coming up with a plan to build software. You are an expert at drafting up tech spec docs that explain how to architect and build software.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "c764be86-93ee-4874-b9c2-0d80bee63b16"
+    },
+    {
+      "id": "759754b0-7063-4aa4-b0cc-fad0b7709bc5",
+      "name": "Create Tech Spec",
+      "description": "Given a description, the assistant will create a software tech spec.",
+      "content": "I need you to draft a technical software spec for building the following:\n{{description}}\n\nThink through how you would build it step by step.\n\nThen, respond as a well-formatted markdown file that is organized into sections. Make sure to use code blocks.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "c764be86-93ee-4874-b9c2-0d80bee63b16"
+    },
+    {
+      "id": "ecfd5ed1-bff8-4039-bae0-70c8991ec2aa",
+      "name": "Code Reviewer (system)",
+      "description": "A system prompt for a code reviewer.",
+      "content": "You are a world-class software engineer. You are particularly good at reviewing code.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "99539056-2b7e-4338-8226-df1699c230cd"
+    },
+    {
+      "id": "5759aef6-ad29-4da0-9fe1-b77a386af73b",
+      "name": "Review Code",
+      "description": "Reviews the given code.",
+      "content": "Review the given code. Think through how you would improve it. Provide suggestions. Help fix bugs & errors. Point out areas of improvement. Commend what was done well. Add your thoughts on anything you think is worth commenting on.\n\nRespond as a well-formatted markdown file that is organized into sections. Make sure to use code blocks.\n\nReview this code:\n{{code}}",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "99539056-2b7e-4338-8226-df1699c230cd"
+    },
+    {
+      "id": "99b2b1be-da3f-4ec9-99d8-9f2aeb8dd8fe",
+      "name": "Code Translator (system)",
+      "description": "A system prompt for a code translator.",
+      "content": "You are a world-class software engineer. You are an expert in all programming languages. You are particularly good at translating code from one language to another.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "8d50c17a-9b4a-4536-843a-48097e1d98bc"
+    },
+    {
+      "id": "6c01e241-afa4-42be-ab56-4e743d26edcb",
+      "name": "Translate Code",
+      "description": "Translate code from one language to another.",
+      "content": "Translate the given code to {{targetLanguage}}.\n\nRespond as a markdown code block of the translated code.\n\nTranslate this code:\n{{input code}}\n\nThe translated {{targetLanguage}} code:",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "8d50c17a-9b4a-4536-843a-48097e1d98bc"
+    },
+    {
+      "id": "799c92b7-f61c-4880-b53a-96133c5652a1",
+      "name": "Grade Code (number)",
+      "description": "Grades the given code a number grade.",
+      "content": "Grade my code. Give it a score out of 10.\n\nAnalyze it as you see best, and take into account multiple factors. The grade needs to be comprehensive.\n\nGive the number grade 1st, then explain your reasoning.\n\nRespond as a report card in well-formatted markdown.\n\nGrade this code:\n{{code}}",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "3a039cd5-7a48-40f5-b629-ed4c756dd0a9"
+    },
+    {
+      "id": "b349b039-7189-4167-acd2-f011a8415fd1",
+      "name": "Code Generator (system)",
+      "description": "A system prompt for a code generator.",
+      "content": "You are a world-class software engineer. You are an expert at generating any code you are asked for.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "6eea5390-b971-4fd4-9a17-3bb60f657b9d"
+    },
+    {
+      "id": "56ceeaf2-9946-4349-a190-e994942ddcdc",
+      "name": "Generate Code",
+      "description": "Generates code given a description.",
+      "content": "I need code that does the following:\n{{description}}\n\nGenerate the code for me.\n\nRespond as a markdown code block.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "6eea5390-b971-4fd4-9a17-3bb60f657b9d"
+    },
+    {
+      "id": "24e2d2c5-adc4-4c71-aadc-11283d0bce4a",
+      "name": "Code Grader (system)",
+      "description": "A system prompt for a code grader.",
+      "content": "You are a world-class software engineer. You are particularly skilled at grading code.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "3a039cd5-7a48-40f5-b629-ed4c756dd0a9"
+    },
+    {
+      "id": "5bc0fa63-3086-47a8-a57b-cda6dd0ca051",
+      "name": "Code Changer (system)",
+      "description": "A system prompt for changing code.",
+      "content": "You are a world-class software engineer. You are particularly skilled at updating code to meet specific requests.",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "1d168eb9-be6c-4206-80bf-a4f74b648d5e"
+    },
+    {
+      "id": "d0accc82-fca1-4e9d-a14e-0f30dc54a44c",
+      "name": "Change Code",
+      "description": "Makes the specified changes to the code.",
+      "content": "Given the code and the request, make the specified changes.\n\nMake this change:\n{{request}}\n\nModify this code:\n{{code}}",
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      },
+      "folderId": "1d168eb9-be6c-4206-80bf-a4f74b648d5e"
+    }
+  ]
+}
