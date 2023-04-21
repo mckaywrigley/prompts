@@ -18,7 +18,7 @@ Expect much more powerful prompts as I get this system ironed out.
 
 Download the json file [here](https://drive.google.com/file/d/142KoReNVMeoqcaZ3Njj9ltnadnEXAmCo/view?usp=sharing) and import it into [Chatbot UI](https://www.chatbotui.com/).
 
-Or, you can just copy and paste the prompts you want into ChatGPT.
+Or, you can run `$ curl https://raw.githubusercontent.com/mckaywrigley/prompts/main/prompts.json | jq '.prompts[] | {description,content}' > mckays-prompts.txt`, open the `mckays-prompts.txt` file, copy and paste the prompts you want into ChatGPT.
 
 ## Upcoming
 
